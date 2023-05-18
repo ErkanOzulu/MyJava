@@ -1,0 +1,31 @@
+Java Day49
+Topic: Collections Continue
+				Set
+				Queue
+
+Package name: day49_Collections
+
+
+Collection (I): 
+		
+		List (I): Has Index, Allows Duplicates
+
+
+		Set (I): Does not have index, does not allow duplicates
+
+				HashSet (C): order is random
+
+				LinkedHashSet (C): keeps the insertion order
+
+				TreeSet (C): keeps sorted order, does not accept null
+
+
+		Queue(I)
+
+		//From Collection back to array
+          String[] arr = {"Wooden Spoon", "Eggs", "Coke", "Paper towels"};
+          arr = new LinkedHashSet<>( Arrays.asList(arr) ).toArray(new String[0]);
+
+          From one type of Collection to the other one
+          ArrayList<Integer> list = new ArrayList<>();
+          list = new ArrayList<>(  new LinkedHashSet<>(list)  );
