@@ -10,6 +10,7 @@ public class ArrayListIntro {
         ArrayList<String> names=new ArrayList<>();
         System.out.println(numbers.toString());
         System.out.println(names.toString());
+
     }
 
 }
