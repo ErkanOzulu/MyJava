@@ -11,7 +11,7 @@ Step-by-step Binary Search Algorithm: We basically ignore half of the elements j
 public class BinarySearch {
     // Returns index of x if it is present in arr[l..
     // r], else return -1
-    public int binarySearch(int arr[], int l, int r, int x) {
+    public static int binarySearch(int arr[], int l, int r, int x) {
         if (r >= l) {
             int mid = l + (r - l) / 2;
 
@@ -63,14 +63,14 @@ public class BinarySearch {
 
 
     public static void main(String args[]) {
-        BinarySearch ob = new BinarySearch();
+
         int arr[] = {2, 3, 4, 10, 40};
         int n = arr.length;
         int x = 10;
 
         System.out.println("-----with Recursive Method--- ");
 
-        int result = ob.binarySearch(arr, 0, n - 1, x);
+        int result = binarySearch(arr, 0, n - 1, x);
         if (result == -1)
             System.out.println("Element not present");
         else
