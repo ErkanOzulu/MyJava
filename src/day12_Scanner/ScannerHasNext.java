@@ -11,7 +11,7 @@ public class ScannerHasNext {
         System.out.println("Please enter a number");
 
 
-        if (scanner.hasNextInt()) {
+        if (scanner.hasNextInt()) { //check if it is int or not give true or false
 
             int number = scanner.nextInt();
             System.out.println("number : " + number);
